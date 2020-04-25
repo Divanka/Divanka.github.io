@@ -2,98 +2,64 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <div>
-    <script language="javascript" type="text/javascript">
-      var d = new Date();
-
-      var day = new Array("Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота");
-
-      var month = new Array("января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря");
-
-      document.write(day[d.getDay()]);
-    </script>
-  </div>
-  <title>Document</title>
-  <style>
-    table,
-    th,
-    td {
-      border: 2px solid black;
-      border-collapse: collapse;
-      margin: auto;
-      padding: 5px 5px;
-      font-size: 20px;
-    }
-
-    th {
-      background: PaleGreen;
-    }
-
-    table {
-      height: 400px;
-      margin-top: 20px;
-    }
-
-    div {
-      text-align: center;
-      font-size: 60px;
-      margin-top: 60px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание</title>
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-  <table>
-    <tbody>
-      <tr>
-        <th>Понедельник</th>
-        <th>Вторник</th>
-        <th>Среда</th>
-        <th>Четверг</th>
-        <th>Пятница</th>
-        <th>Суббота</th>
-        <th>Воскресенье</th>
-      </tr>
-      <tr>
-        <td><b>13:00 - 15:00</b><br> Урок у Дани с Ваней</td>
-        <td><b>12:20 - 16:00</b><br> Пары </td>
-        <td><b>09:00 - 12:20</b><br> Пары</td>
-        <td><b>15:00 - 17:00</b><br> Урок у Дани с Кириллом</td>
-        <td><b>14:00 - 16:00</b><br> Урок у Дани с Ваней</td>
-        <td><b>12:00 - 14:00</b><br> Урок у Дианы с Игнатом</td>
-        <td><b>11:30 - 13:30</b><br> Урок у Дани с группой</td>
-      </tr>
-      <tr>
-        <td><b>15:00 - 16:00</b><br> Урок у Дианы с Кристофом</td>
-        <td><b>14:00 - 16:00</b><br> Урок у Дани с Кириллом</td>
-        <td><b>12:00 - 14:00</b><br> Урок у Дианы с Глебом</td>
-        <td><b>16:00 - 17:00</b><br> Урок у Дианы с группой</td>
-        <td><b>16:30 - 18:00</b><br> Урок у Дани с Кристиной</td>
-        <td><b>16:30 - 18:30</b><br> Урок у Дани с Лешей</td>
-        <td><b>14:00 - 15:30</b><br> Урок у Дианы с Димой</td>
-      </tr>
-      <tr>
-        <td><b>14:30 - 17:40</b><br> Пары</td>
-        <td><b>16:00 - 17:00</b><br> Урок у Дианы с группой</td>
-        <td><b>14:30 - 17:30</b><br> Урок у Дианы с Вовой </td>
-        <td><b>16:10 - 19:20</b><br> Пары</td>
-        <td> - </td>
-        <td> - </td>
-        <td><b>16:00 - 17:00</b><br> Урок у Дианы с Сашей</td>
-      </tr>
-      <tr>
-        <td><b>18:00 - 20:00</b><br> Урок у Дани с Кристиной</td>
-        <td><b>17:00 - 19:00</b><br> Урок у Дианы с Сережей</td>
-        <td><b>18:00 - 20:00</b><br> Урок у Дани с Ваней </td>
-        <td> - </td>
-        <td> - </td>
-        <td> - </td>
-        <td><b>17:00 - 19:00</b><br> Урок у Дианы с Игнатом</td>
-      </tr>
-    </tbody>
-  </table>
+    <table>
+        <tbody>
+            <tr>
+                <th id="Monday">Понедельник</th>
+                <th class="Tuesday">Вторник</th>
+                <th class="Wednesday">Среда</th>
+                <th class="Thursday">Четверг</th>
+                <th class="Friday">Пятница</th>
+                <th class="Saturday">Суббота</th>
+                <th class="Sunday">Воскресенье</th>
+            </tr>
+            <tr>
+                <td><b>13:00 - 15:00</b><br> Урок у Дани с Ваней</td>
+                <td><b>12:20 - 16:00</b><br> Пары </td>
+                <td><b>09:00 - 12:20</b><br> Пары</td>
+                <td><b>15:00 - 17:00</b><br> Урок у Дани с Кириллом</td>
+                <td><b>14:00 - 16:00</b><br> Урок у Дани с Ваней</td>
+                <td><b>12:00 - 14:00</b><br> Урок у Дианы с Игнатом</td>
+                <td><b>11:30 - 13:30</b><br> Урок у Дани с группой</td>
+            </tr>
+            <tr>
+                <td><b>15:00 - 16:00</b><br> Урок у Дианы с Кристофом</td>
+                <td><b>14:00 - 16:00</b><br> Урок у Дани с Кириллом</td>
+                <td><b>12:00 - 14:00</b><br> Урок у Дианы с Глебом</td>
+                <td><b>16:00 - 17:00</b><br> Урок у Дианы с группой</td>
+                <td><b>16:30 - 18:00</b><br> Урок у Дани с Кристиной</td>
+                <td><b>16:30 - 18:30</b><br> Урок у Дани с Лешей</td>
+                <td><b>14:00 - 15:30</b><br> Урок у Дианы с Димой</td>
+            </tr>
+            <tr>
+                <td><b>14:30 - 17:40</b><br> Пары</td>
+                <td><b>16:00 - 17:00</b><br> Урок у Дианы с группой</td>
+                <td><b>14:30 - 17:30</b><br> Урок у Дианы с Вовой </td>
+                <td><b>16:10 - 19:20</b><br> Пары</td>
+                <td> - </td>
+                <td> - </td>
+                <td><b>16:00 - 17:00</b><br> Урок у Дианы с Сашей</td>
+            </tr>
+            <tr>
+                <td><b>18:00 - 20:00</b><br> Урок у Дани с Кристиной</td>
+                <td><b>17:00 - 19:00</b><br> Урок у Дианы с Сережей</td>
+                <td><b>18:00 - 20:00</b><br> Урок у Дани с Ваней </td>
+                <td> - </td>
+                <td> - </td>
+                <td> - </td>
+                <td><b>17:00 - 19:00</b><br> Урок у Дианы с Игнатом</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
