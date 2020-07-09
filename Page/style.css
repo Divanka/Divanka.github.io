@@ -21,13 +21,13 @@ table {
 }
 
 body{
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 div {
     text-align: center;
     font-size: 60px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 
@@ -48,3 +48,41 @@ div {
     height: 20px;
     font-size: 25px;
 }
+
+
+   
+   
+body {
+    text-align: center;
+    /* background: #00ecb9; */
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  
+  .countdown-title {
+    color: #396;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+  }
+  
+   
+  .countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background: #00bf96;
+    display: inline-block;
+  }
+   
+  .countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816a;
+    display: inline-block;
+  }
+   
+  .countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+  }
